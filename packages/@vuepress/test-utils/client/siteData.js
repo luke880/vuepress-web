@@ -26,14 +26,14 @@ export default {
     "docsDir": "docs",
     "locales": {
       "/en/": {
-        // "label": "English",
-        // "selectText": "Languages",
+        "label": "English",
+        "selectText": "Languages",
         "editLinkText": "Edit this page on GitHub",
         "lastUpdated": "Last Updated"
       },
       "/": {
-        // "label": "简体中文",
-        // "selectText": "选择语言",
+        "label": "简体中文",
+        "selectText": "选择语言",
         "editLinkText": "在 GitHub 上编辑此页",
         "lastUpdated": "上次更新"
       }

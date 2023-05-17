@@ -2,7 +2,7 @@
 home: true
 heroImage: /hero.png
 actionText: 快速上手 →
-actionLink: /zh/guide/
+actionLink: /zh/guide/getting-started.html
 features:
 - title: 微服务
   details: 基于Springboot、SpringCloud、Mybatis-Plus框架搭建的微服务项目。

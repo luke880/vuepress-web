@@ -1,13 +1,4 @@
----
-title: 常见问题
-sidebar: auto
-sidebarDepth: 1
-categories:
-  - 后端
-tags:
-  - 后端
----
-<!-- # 常见问题 -->
+# 常见问题
 
 ## 一、only regular white space (\r, \n, \t) is allowed between tokens
 
@@ -34,7 +25,7 @@ feign:
 
 springboot内置tomcat启动服务出现异常提示中文乱码，保存数据json解析异常等问题，折腾了半天，原来用cmd窗口直接启动跟放bat里执行效果是不一样的：
 ### 走过的弯路
-#### 1、配置1无效
+  + 1、配置1无效
 ```yaml
 # Tomcat
 server:
@@ -42,7 +33,7 @@ server:
   tomcat:
     uri-encoding: UTF-8 
 ```
-####  2、配置2无效
+  + 2、配置2无效
 ```yaml
 spring:
   http:
@@ -51,29 +42,28 @@ spring:
       charset: UTF-8
       enabled: true
 ```
-#### 3、java代码调整produces = {"application/json; charset=utf-8"})  无效
+  + 3、java代码调整produces = {"application/json; charset=utf-8"})  无效
 发现java代码里没有写produces = {"application/json; charset=utf-8"})
 
 ```java
 @PostMapping(value = "/add", produces = {"application/json; charset=utf-8"})
 ```
-#### 4、直接cmd执行 java -jar命令无效
+  + 4、直接cmd执行 java -jar命令无效
 
 ### 异常提示中文乱码
-![](/easyweb/images/question/异常.png)
+![异常提示中文乱码](../../.vuepress/images/question/yc.png)
 ### 提交数据json解析异常
 ```java
 400 BAD_REQUEST "Failed to read HTTP message"; nested exception is org.springframework.core.codec.DecodingException: JSON decoding error: Invalid UTF-8 start byte 0xb6; nested exception is com.fasterxml.jackson.databind.JsonMappingException: Invalid UTF-8 start byte 0xb6 at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 54] (through reference chain: com.evn.gateway.entity.GatewayRoute["serviceName"])
 ```
 ![](https://img-blog.csdnimg.cn/c072c526452c42fab7975d4aa8b19238.png)
-### 解决方式   用bat执行，运行正常
-#### 1、通过bat启动程序
-#### 2、启动命令添加“-Dfile.encoding=UTF-8”  
++ 解决方式   用bat执行，运行正常
+  - 1、通过bat启动程序
+  - 2、启动命令添加“-Dfile.encoding=UTF-8”  
    启动命令（java -Dfile.encoding=UTF-8 -jar  -Xms128m -Xmx256m XXX.jar）
    docker启动（docker run -e JAVA_OPTS='-server -Xms128m -Xmx128m -Dfile.encoding=UTF-8' -d --name name -p port:portimage:1.0）
    在双击执行bat启动生效 ，提示正常了，提交数据也能成功。
 ![提示显示中文内容](https://img-blog.csdnimg.cn/e084d3f068e34a98bcc17a336af8bc6e.png)
-
 
 
 
@@ -113,6 +103,9 @@ update sys_region set parent_region_id=rpad(parent_region_id,12,'0') where paren
 3、执行命令 tasklist | findstr 29292（此处29292根据第二步骤所查询到的pid 输入，不同情况pid不同，大家要根据第二步骤输入对应pid）
 
 4、执行taskkill /f /t /im 进程名/pid   (如果用pid的话可以省略第三步就可以顺利关闭占用端口的程序)
+
+
+# 工作流问题
 
 
 :tada: :100:

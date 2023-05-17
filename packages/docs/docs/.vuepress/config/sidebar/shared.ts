@@ -43,7 +43,7 @@ export function getThemeSidebar (
     {
       title: groupA,
       collapsable: false,
-      sidebarDepth: 2,
+      sidebarDepth: 3,
       children: [
         ['', introductionA],
         'using-a-theme',
@@ -70,27 +70,49 @@ export function getGuideSidebar (groupA, groupB): SidebarConfigArray {
       children: [
         '',
         'getting-started',
-        'directory-structure',
-        'basic-config',
-        'typescript-as-config',
-        'assets',
-        'markdown',
-        'using-vue',
-        'i18n',
-        'deploy'
+        'vue',
+        'java',
+        'engine'
+        // 'directory-structure',
+        // 'basic-config',
+        // 'typescript-as-config',
+        // 'assets',
+        // 'markdown',
+        // 'using-vue',
+        // 'i18n',
+        // 'deploy'
       ]
     },
     {
       title: groupB,
       collapsable: false,
       children: [
-        'frontmatter',
-        'permalinks',
-        'markdown-slot',
-        'global-computed'
+        // 'frontmatter',
+        // 'permalinks',
+        'markdown-slot'
+        // 'global-computed'
       ]
     }
   ]
+  return sidebar
+}
 
+export function getQuestionSidebar (groupA, groupB): SidebarConfigArray {
+  const sidebar: SidebarConfigArray = [
+    {
+      title: groupA,
+      collapsable: false,
+      children: [
+        ''
+      ]
+    },
+    {
+      title: groupB,
+      collapsable: false,
+      children: [
+        'bpm'
+      ]
+    }
+  ]
   return sidebar
 }

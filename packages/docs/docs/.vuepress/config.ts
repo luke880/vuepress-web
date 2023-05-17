@@ -45,8 +45,8 @@ export default defineConfig(ctx => ({
   locales: {
     '/en/': {
       lang: 'en-US',
-      title: 'VuePress',
-      description: 'Vue-powered Static Site Generator'
+      title: 'Easyweb',
+      description: 'Quickly building web applications using the central platform'
     },
     '/': {
       lang: 'zh-CN',
@@ -55,7 +55,8 @@ export default defineConfig(ctx => ({
     }
   },
   themeConfig: {
-    repo: 'vuejs/vuepress',
+    logo: '/images/logo.png',
+    repo: 'luke880/vuepress-web',
     editLinks: true,
     docsDir: 'packages/docs/docs',
     // #697 Provided by the official algolia team.
@@ -70,19 +71,19 @@ export default defineConfig(ctx => ({
       : null,
     smoothScroll: true,
     locales: {
-      '/en/': {
-        // label: 'English',
-        // selectText: 'Languages',
-        // ariaLabel: 'Select language',
-        editLinkText: 'Edit this page on GitHub',
-        lastUpdated: 'Last Updated',
-        nav: NavItems4EN,
-        sidebar: Sidebar4EN
-      },
+      // '/en/': {
+      //   label: 'English',
+      //   selectText: 'Languages',
+      //   ariaLabel: 'Select language',
+      //   editLinkText: 'Edit this page on GitHub',
+      //   lastUpdated: 'Last Updated',
+      //   nav: NavItems4EN,
+      //   sidebar: Sidebar4EN
+      // },
       '/': {
-        // label: '简体中文',
-        // selectText: '选择语言',
-        // ariaLabel: '选择语言',
+        label: '简体中文',
+        selectText: '选择语言',
+        ariaLabel: '选择语言',
         editLinkText: '在 GitHub 上编辑此页',
         lastUpdated: '上次更新',
         nav: NavItems4ZH,

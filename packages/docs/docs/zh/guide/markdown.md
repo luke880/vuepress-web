@@ -53,8 +53,8 @@ VuePress 支持重定向到干净链接。如果一个链接 `/foo` 找不到，
 
 外部的链接将会被自动地设置为  `target="_blank" rel="noopener noreferrer"`:
 
-- [vuejs.org](https://vuejs.org)
-- [VuePress on GitHub](https://github.com/vuejs/vuepress)
+<!-- - [vuejs.org](https://vuejs.org)
+- [VuePress on GitHub](https://github.com/vuejs/vuepress) -->
 
 你可以自定义通过配置 [config.markdown.externalLinks](../config/README.md#markdown-externallinks) 来自定义外部链接的特性。
 

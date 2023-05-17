@@ -3,7 +3,10 @@
 Easyweb是基于Springboot、SpringCloud、Mybatis框架搭建的前后端分离项目，前端基于Vue、Element、qiankun(微前端)框架搭建，集成Activiti工作流引擎于一体。
 
 ## 架构图
-![](../../.vuepress/images/jgt.png)
+![架构图](../../.vuepress/images/guide/jgt.png)
+
+## 部署图
+![部署图](../../.vuepress/images/guide/bst.png)
 
  ## 服务端口介绍
 |类型|名称|服务名|默认端口|服务前缀|

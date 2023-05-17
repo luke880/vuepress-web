@@ -10,14 +10,14 @@ export const NavItems4ZH: NavItem[] = [
   //   link: '/zh/config/'
   // },
   {
+    text: '常见问题',
+    link: '/zh/question/'
+  },
+  {
     text: '中台演示',
     link: 'http://192.168.3.35:9080'
   },
   {
-    text: '常见问题',
-    link: '/zh/question/'
-  },
-    {
     text: '更新日志',
     link: '/zh/version/'
   }
