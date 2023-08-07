@@ -56,7 +56,8 @@ export default defineConfig(ctx => ({
   },
   themeConfig: {
     logo: '/images/logo.png',
-    repo: 'luke880/vuepress-web',
+    // repo: 'luke880/vuepress-web',
+    repo: '#',
     editLinks: true,
     docsDir: 'packages/docs/docs',
     // #697 Provided by the official algolia team.
