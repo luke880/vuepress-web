@@ -5,10 +5,6 @@ export const NavItems4ZH: NavItem[] = [
     text: '文档',
     link: '/zh/guide/'
   },
-  // {
-  //   text: '配置',
-  //   link: '/zh/config/'
-  // },
   {
     text: '常见问题',
     link: '/zh/question/'

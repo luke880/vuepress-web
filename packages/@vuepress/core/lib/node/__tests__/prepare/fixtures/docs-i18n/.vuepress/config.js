@@ -20,13 +20,13 @@ module.exports = {
       '/en/': {
         label: 'English',
         selectText: 'Languages',
-        editLinkText: 'Edit this page on GitHub',
+        // editLinkText: 'Edit this page on GitHub',
         lastUpdated: 'Last Updated'
       },
       '/': {
         label: '简体中文',
         selectText: '选择语言',
-        editLinkText: '在 GitHub 上编辑此页',
+        // editLinkText: '在 GitHub 上编辑此页',
         lastUpdated: '上次更新'
       }
     }

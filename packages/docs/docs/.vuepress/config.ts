@@ -1,8 +1,8 @@
 import { defineConfig } from 'vuepress/config'
 import {
-  Sidebar4EN,
+  // Sidebar4EN,
   Sidebar4ZH,
-  NavItems4EN,
+  // NavItems4EN,
   NavItems4ZH
 } from './config/index'
 
@@ -43,11 +43,11 @@ export default defineConfig(ctx => ({
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   locales: {
-    '/en/': {
-      lang: 'en-US',
-      title: 'Easyweb',
-      description: 'Quickly building web applications using the central platform'
-    },
+    // '/en/': {
+    //   lang: 'en-US',
+    //   title: 'Easyweb',
+    //   description: 'Quickly building web applications using the central platform'
+    // },
     '/': {
       lang: 'zh-CN',
       title: 'Easyweb',
@@ -58,7 +58,7 @@ export default defineConfig(ctx => ({
     logo: '/images/logo.png',
     // repo: 'luke880/vuepress-web',
     repo: '#',
-    editLinks: true,
+    editLinks: false,
     docsDir: 'packages/docs/docs',
     // #697 Provided by the official algolia team.
     algolia: ctx.isProd
@@ -70,7 +70,10 @@ export default defineConfig(ctx => ({
         }
       }
       : null,
-    smoothScroll: true,
+    smoothScroll: false,
+    sidebar: false,
+    displayAllHeaders: true, // 默认值：false
+    activeHeaderLinks: false, // 默认值：true
     locales: {
       // '/en/': {
       //   label: 'English',
@@ -83,11 +86,11 @@ export default defineConfig(ctx => ({
       // },
       '/': {
         label: '简体中文',
-        selectText: '选择语言',
-        ariaLabel: '选择语言',
+        selectText: 'xzyy',
+        ariaLabel: 'xzyy',
         editLinkText: '在 GitHub 上编辑此页',
         lastUpdated: '上次更新',
-        nav: NavItems4ZH,
+        nav: NavItems4ZH, 
         sidebar: Sidebar4ZH
       }
     }
