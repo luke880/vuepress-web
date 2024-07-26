@@ -16,6 +16,10 @@ export const NavItems4ZH: NavItem[] = [
   {
     text: '更新日志',
     link: '/zh/version/'
+  },
+  {
+    text: '下载中心',
+    link: '/zh/download/'
   }
   // ,
   // {
