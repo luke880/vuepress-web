@@ -30,5 +30,5 @@ tags:
     Grpc：升级到 1.64.2 版本。
 
 ::: tip NACOS 2.4.0下载
-[nacos-server-2.4.0.tar.gz](blob:https://github.com/2da9faf6-5e6a-4da6-a429-8577e1108a7d "NACOS 2.4.0")
+[nacos-server-2.4.0.tar.gz](https://zrar88.github.io/easyweb/zh/download/files/nacos-server-2.4.0.tar.gz "NACOS 2.4.0")
 :::
