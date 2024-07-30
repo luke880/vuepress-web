@@ -11,7 +11,7 @@ export const NavItems4ZH: NavItem[] = [
   },
   {
     text: '中台演示',
-    link: 'http://192.168.3.35:9080'
+    link: 'http://192.168.3.35:8081'
   },
   // {
   //   text: '更新日志',

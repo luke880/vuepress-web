@@ -86,7 +86,7 @@ export function getGuideSidebar (groupA, groupB): SidebarConfigArray {
       children: [
         // 'frontmatter',
         // 'permalinks',
-        'markdown-slot'
+        // 'markdown-slot'
         // 'global-computed'
       ]
     }
