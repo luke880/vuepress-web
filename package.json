@@ -65,5 +65,8 @@
     "monoo": "0.4.3",
     "sort-package-json": "^1.24.0",
     "typescript": "4.5.2"
+  },
+  "dependencies": {
+    "yarn": "^1.22.22"
   }
 }

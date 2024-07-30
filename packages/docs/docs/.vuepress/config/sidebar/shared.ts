@@ -35,15 +35,12 @@ export function getPluginSidebar (
   return sidebar
 }
 
-export function getThemeSidebar (
-  groupA: string,
-  introductionA: string
-): SidebarConfigArray {
+export function getThemeSidebar (groupA: string,introductionA: string): SidebarConfigArray {
   const sidebar: SidebarConfigArray = [
     {
       title: groupA,
       collapsable: false,
-      sidebarDepth: 3,
+      sidebarDepth: 4,
       children: [
         ['', introductionA],
         'using-a-theme',
@@ -91,6 +88,29 @@ export function getGuideSidebar (groupA, groupB): SidebarConfigArray {
         // 'permalinks',
         'markdown-slot'
         // 'global-computed'
+      ]
+    }
+  ]
+  return sidebar
+}
+
+export function getProjectSidebar (groupA, groupB): SidebarConfigArray {
+  const sidebar: SidebarConfigArray = [
+    {
+      title: groupA,
+      collapsable: false,
+      children: [
+        '',
+        'easyweb-3.1.0',
+        'easyweb-3.0.0'
+      ]
+    },
+    {
+      title: groupB,
+      collapsable: false,
+      children: [
+        'nacos-2.4.0',
+        'sentinel-1.8.8'
       ]
     }
   ]

@@ -31,7 +31,7 @@ export default {
   },
 
   render (h) {
-    return h('div', { class: 'carbon-ads' })
+    // return h('div', { class: 'carbon-ads' })
   }
 }
 </script>

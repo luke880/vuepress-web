@@ -13,13 +13,13 @@ export const NavItems4ZH: NavItem[] = [
     text: '中台演示',
     link: 'http://192.168.3.35:9080'
   },
+  // {
+  //   text: '更新日志',
+  //   link: '/zh/version/'
+  // },
   {
-    text: '更新日志',
-    link: '/zh/version/'
-  },
-  {
-    text: '下载中心',
-    link: '/zh/download/'
+    text: '产品中心',
+    link: '/zh/project/'
   }
   // ,
   // {
