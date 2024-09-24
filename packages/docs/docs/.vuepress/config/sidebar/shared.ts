@@ -101,6 +101,7 @@ export function getProjectSidebar (groupA, groupB): SidebarConfigArray {
       collapsable: false,
       children: [
         '',
+        'easyweb-3.2.1',
         'easyweb-3.1.0',
         'easyweb-3.0.0'
       ]
